@@ -29,7 +29,7 @@
       <div class="container" style = "display: flex; flex-direction: row; justify-content: space-around;">
         <div style="display: flex; ">
           <img class="img-fluid first" src="../img/phone-icon.png" style="padding-right:20px">
-          <span style="font-family: sans-serif;color:white;font-size:1.2rem;position:relative;;padding-right:10px"><strong>Contact us</strong> <br>(978) 835-0305<br>LienZay@gmail.com</span>
+                    <span style="font-family: sans-serif;color:white;font-size:1.2rem;position:relative;padding-right:10px;top:7px"><strong>Contact us</strong> <br>(978) 835-0305</span>
         </div>
         <div style="display: flex;">
           <img class="img-fluid first" src="../img/house-icon.png" style="padding-left: 10px;padding-right:20px">
@@ -83,31 +83,25 @@
                 <span class="section-heading-upper">Want to schedule an appointment?</span>
                 <span class="section-heading-lower">Contact Us</span>
               </h2>
-              <p class="address mb-5">
-                  <strong>400 Trade Center, Suite 5900</strong>
-                  <br>
-                  Woburn, MA 01801
-              </p>
-              <div class="container" style="width: 400px;height:50px">
-                <div class="contact-phone" style="float:left">
-                  <p>
-                    <small>
-                      <em>Phone</em>
-                    </small>
-                    <br>
-                    (978) 835-0305
-                  </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2  mx-auto">
+                      <div class="alert alert-success" style="display:none;"><strong></strong>Email successfully sent.</div>
+                        <form class="gform" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbw5ENU5Afy-rl9t_x2UcdxlZNgJ2sL2VxJzAL3l/exec">
+                          <div class="row">
+                              <div class="col-md-12 form-group" style="display: table;"><input style="display: table-cell;" class="form-control" id="name" name="name" placeholder="Name" type="text" required="" /></div><br>
+                              <div class = "container" style="display: flex; flex-direction: row; justify-content: space-around;">
+                                <div class="col-md-6 form-group" style="padding-left:0"><input style=" display:inline; float:left;" class="form-control" id="email" name="email" placeholder="Email" type="email" required="" /></div>
+                                <div class="col-md-6 form-group" style="padding-right:0"><input style=" display:inline; float:right" class="form-control" id="phone" name="phone" placeholder="Phone" type="tel" required="" /></div>
+                              </div>
+                          </div><textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea><br/>
+                          <div class="row">
+                              <div class="col-md-12 form-group"><button class="btn btn-primary form-submit">Submit</button></div>
+                          </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-                <div class="contact-email" style="float:right">
-                  <p>
-                    <small>
-                      <em>Email</em>
-                    </small>
-                    <br>
-                    LienZay@gmail.com
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -123,6 +117,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src='../javascript/contactFormHandler.js'></script>
 
   </body>
 </html>
