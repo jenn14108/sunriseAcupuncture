@@ -8,9 +8,25 @@
     #condition2{float: right; width:50%;}
 }
 @media only screen and (max-width:1200px) {
-    #best-ofs1 {display: none;}
-    #best-ofs2 {display:none;}
+    div#best-ofs.col-xl-2{flex-direction:row!important;justify-content:space-around!important;text-align:center!important}
+    #best-ofs1{position:relative;left:-20px;width:35%;padding-left:5px}
+    #best-ofs2{width:35%;padding-right:5px;padding-bottom:50px!important}
+    #lien{z-index:-2!important}
+    #aboutPracBg,#indexBg{font-size:40px!important}
+    #questionsBg{font-size:42px!important}
+    #conditionsBg{font-size:38px!important}
+    #acupunctureLien,#testimonialsBg{font-size:45px!important}
+    #aboutPracSml,#indexSml{font-size:30px!important}
+    #auricular,#electro,#guaSha,#cupping,#moxi,#tuina{font-size:36px!important}
+    #conditionsBox{padding-bottom:5px!important}
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    div#best-ofs1{left:-45px!important}
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+    div#best-ofs1{left:-60px!important}
+}
+
 
 #conditions1{padding-bottom:25px;}
 .floating1{float:none;}
