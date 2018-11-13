@@ -25,7 +25,7 @@ and (max-width:1200px){
 }
 
 /* iPad Mini in landscape only*/
-@media only screen
+/*@media only screen
 and (min-device-width : 1024px)
 and (max-device-width: 1024px)
 and (max-device-height: 768px)
@@ -39,10 +39,10 @@ and (orientation : landscape) {
     left:100px!important;
     z-index:10!important;
   }
-}
+}*/
 
 /* iPad Pro in portrait only */
-@media only screen
+/*@media only screen
 and (min-device-width : 1024px)
 and (max-device-width: 1024px)
 and (max-device-height: 1366px)
@@ -56,7 +56,7 @@ and (orientation: portrait){
     left:100px!important;
     z-index:10!important;
   }
-}
+}*/
 
 
 /* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
