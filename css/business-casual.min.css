@@ -7,7 +7,8 @@
     #conditions1{padding-bottom:25px; float:left; width:50%;}
     #condition2{float: right; width:50%;}
 }
-@media only screen and (max-width:1200px) {
+@media only screen
+and (max-width:1200px){
     div#best-ofs.col-xl-2{flex-direction:row!important;justify-content:space-around!important;text-align:center!important}
     #best-ofs1{position:relative;width:35%;padding-left:5px}
     /* left:-20px */
@@ -22,6 +23,41 @@
     #auricular,#electro,#guaSha,#cupping,#moxi,#tuina{font-size:36px!important}
     #conditionsBox{padding-bottom:5px!important}
 }
+
+/* iPad Mini in landscape only*/
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width: 1024px)
+and (max-device-height: 768px)
+and (orientation : landscape) {
+  div#aboutParagraph.col-lg-10 {
+    max-width:60%!important;
+    margin-left:220px!important;
+    margin-top:70px!important;
+  }
+  img#lien.about-heading-img {
+    left:100px!important;
+    z-index:10!important;
+  }
+}
+
+/* iPad Pro in portrait only */
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width: 1024px)
+and (max-device-height: 1366px)
+and (orientation: portrait){
+  div#aboutParagraph.col-lg-10 {
+    max-width:60%!important;
+    margin-left:220px!important;
+    margin-top:70px!important;
+  }
+  img#lien.about-heading-img {
+    left:100px!important;
+    z-index:10!important;
+  }
+}
+
 
 /* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     div#best-ofs1{left:-45px!important}
